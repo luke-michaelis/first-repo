@@ -1,22 +1,4 @@
-#!/usr/bin/env python3
-# version 1.164-dev — launch defaults every time + prior features
-# show/hide lines, LightBurn kill on Stop/Close, Copies support,
-# stencil dropdown on Line 2, Import Config, RAW SERIAL DEBUG, non-blocking reads, COM port logging
-# Updated: falling/rising edge control, dev-page checkboxes to toggle main-page lines,
-# Copies dropdown, vertical mirror for top copy
-# Changed: offset now defines gap between texts, not distance from a reference dot
-# Fix: clear & restart auto-dismisser thread on each job start so UDP server comes up clean
-# Fix #2: filter serial input so only “🔻 FALLING” / “⚡️ RISING” lines get logged
-# Fix #3: actually restore window flags on exit_borderless_fullscreen (was checking "_prev_flags" instead of "_prev flags")
-# Fix #4: flip the **other** copy around its own insert point instead of the first one
-# NEW: stencil dropdown next to Line 2 updates the Line 2 text field
-# NEW: Import Config button on Dev page to load a JSON template and autofill all Dev-page settings
-# UPDATED: Line edits on main page now have double the font size and increased height
-# DEBUG: RAW serial + decoded line logging, port enumeration, non-blocking timeout
-# CHANGE: Close button moved to Developer Page (removed from Main Page)
-# CHANGE (1.164): Launch defaults on EVERY start — uncheck "Show Line 3" and set Copies to 2.
-# NEW (1.164+): Single-instance enforcement — first instance wins (Windows named mutex); later instances detect it and exit.
-# NEW: Dev-page "Reboot ESP32-C3" button sends REBOOT over serial to reset the C3.
+#Latest version of the program with OneFile Build in mind
 
 import os
 import threading
